@@ -79,6 +79,8 @@ WebUI.click(findTestObject('Object Repository/Register/btn_register'))
 
 WebUI.click(findTestObject('Object Repository/Register/btn_account'))
 
+WebUI.click(findTestObject('Object Repository/Register/btn_alert'))
+
 WebUI.delay(3)
 
 WebUI.closeBrowser()

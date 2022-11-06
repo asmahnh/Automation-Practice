@@ -7,7 +7,20 @@ So that I can login as a registered user
 Background: 
 		Given User open the URL Testing
 		When User clicks Sign in menu
+		
+		
 
+  @NegativeTest
+   Scenario Outline: User register new account with empty data
+   And User enter an email address <email>
+   And User clicks Create an account button
+   And User clicks Register button
+   Then User see the error messages
+   
+   Examples:
+   | email 									|
+   |wagihtawfik@mexcool.com	|
+  
   @PositiveTest
   Scenario Outline: User register new account successful
     And User enter an email address <email>
@@ -33,3 +46,7 @@ Background:
     Examples: 
       | email 								 | title | firstname | lastname | password 	| date | month | year | company    | address 					| city 		 | state | zipcode | country | homephone | mobilephone |
       |wagihtawfik@mexcool.com | Mr.		| Asma			| Tester	 | Testing01@ | 5    |  12   | 1992 | Jarv Group | Menara Cakrawala | New York | 32    | 06830   | 21			 | 655555566 | 85552225555 |
+      
+      
+   
+   

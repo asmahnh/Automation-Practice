@@ -64,7 +64,7 @@ class register {
 	def enteremail(String email) {
 		println ("\n email should be filled")
 		
-		WebUI.setText(findTestObject('Object Repository/Register/txt_email'), 'gorohov1976@tubidu.com')
+		WebUI.setText(findTestObject('Object Repository/Register/txt_email'), 'wagihtawfik@mexcool.com')
 	}
 
 	@And("User clicks Create an account button")
@@ -72,8 +72,25 @@ class register {
 		println ("\n Register account page should be displayed")
 		
 		WebUI.click(findTestObject('Object Repository/Register/btn_createanaccount'))
+		
 	}
 
+	@And("User clicks Register button")
+	def clicksregisterbutton() {
+		println ("\n Register button should be clicked")
+		
+		WebUI.click(findTestObject('Object Repository/Register/btn_register'))
+	}
+	
+	@Then("User see the error messages")
+	def geterrormessage() {
+		println ("\n USer should see the error messages")
+		
+		WebUI.click(findTestObject('Object Repository/Register/btn_alert'))
+		WebUI.delay(5)
+		WebUI.closeBrowser()
+		}
+	
 	@And("User select the title(.*)")
 	def selecttitle(String title) {
 		println ("\n title should be filled")
@@ -177,13 +194,6 @@ class register {
 		println ("\n Mobilephone should be filled")
 		
 		WebUI.setText(findTestObject('Object Repository/Register/txt_phonemobile'), '85552225555')
-	}
-
-	@And("User clicks Register button")
-	def clicksregisterbutton() {
-		println ("\n Register button should be clicked")
-		
-		WebUI.click(findTestObject('Object Repository/Register/btn_register'))
 	}
 
 	@Then("User register new account successful")
