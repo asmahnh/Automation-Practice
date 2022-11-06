@@ -41,7 +41,7 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Object Repository/Register/btn_signin'))
 
-WebUI.setText(findTestObject('Object Repository/Register/txt_email'), 'gorohov1976@tubidu.com')
+WebUI.setText(findTestObject('Object Repository/Register/txt_email'), 'wagihtawfik@mexcool.com')
 
 WebUI.click(findTestObject('Object Repository/Register/btn_createanaccount'))
 
@@ -63,8 +63,6 @@ WebUI.setText(findTestObject('Object Repository/Register/txt_company'), 'Jarv Gr
 
 WebUI.setText(findTestObject('Object Repository/Register/txt_address'), 'Menara Cakrawala')
 
-WebUI.setText(findTestObject('Object Repository/Register/txt_otheraddress'), 'Unit A')
-
 WebUI.setText(findTestObject('Object Repository/Register/txt_city'), 'New York')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Register/drop_state'), '32', false)
@@ -77,7 +75,11 @@ WebUI.setText(findTestObject('Object Repository/Register/txt_homephone'), '65555
 
 WebUI.setText(findTestObject('Object Repository/Register/txt_phonemobile'), '85552225555')
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/Register/btn_register'))
+
+WebUI.click(findTestObject('Object Repository/Register/btn_account'))
+
+WebUI.delay(3)
 
 WebUI.closeBrowser()
 

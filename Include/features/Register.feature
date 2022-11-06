@@ -1,21 +1,4 @@
 #Author: Asma Hanifah
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
 
 Feature: As a new user
 I want to be able to register to the website
@@ -38,7 +21,6 @@ Background:
     And User select the year of birth <year>
     And User enter the Company <company>
     And User enter the Address <address>
-    And User enter the Address Lain <addresslain>
     And User enter the City <city>
     And User select the State <state>
     And User enter the Zipcode <zipcode>
@@ -49,5 +31,5 @@ Background:
     Then User register new account successful
     
     Examples: 
-      | email 								| title | firstname | lastname | password 	| date | month | year | company    | address 					| addresslain | city 		 | state | zipcode | country | homephone | mobilephone |
-      |gorohov1976@tubidu.com | Mr.		| Asma			| Tester	 | Testing01@ | 5    |  12   | 1992 | Jarv Group | Menara Cakrawala | Unit A			| New York | 32    | 06830   | 21			 | 655555566 | 85552225555 |
+      | email 								 | title | firstname | lastname | password 	| date | month | year | company    | address 					| city 		 | state | zipcode | country | homephone | mobilephone |
+      |wagihtawfik@mexcool.com | Mr.		| Asma			| Tester	 | Testing01@ | 5    |  12   | 1992 | Jarv Group | Menara Cakrawala | New York | 32    | 06830   | 21			 | 655555566 | 85552225555 |
